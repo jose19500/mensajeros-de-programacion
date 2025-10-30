@@ -1,0 +1,160 @@
+/* Importación de fuentes de Google Fonts */
+/* 'Nosifier' para títulos que evocan misterio y 'Open Sans' para legibilidad del cuerpo */
+body {
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.7;
+    margin: 0;
+    padding: 0;
+    background-color: #0a0a0a; /* Fondo aún más oscuro, casi carbón */
+    color: #d0d0d0; /* Texto gris claro para contraste sutil */
+    text-align: center;
+    background-image: url('https://via.placeholder.com/1x1.png?text=+'); /* Puedes reemplazar esto con una sutil textura de roca oscura o niebla */
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+header {
+    background-color: rgba(10, 10, 10, 0.95); /* Fondo más oscuro con un poco de transparencia */
+    color: #e0e0e0;
+    padding: 3em 1em;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.05); /* Sutil resplandor para el texto */
+    border-bottom: 3px solid #4a148c; /* Borde de un morado oscuro y místico */
+}
+
+header h1 {
+    font-family: 'Nosifier', serif; /* Fuente distintiva para el título principal */
+    font-size: 4.8em; /* Un poco más grande para impactar */
+    margin-bottom: 0.3em;
+    color: #880e4f; /* Un rojo púrpura oscuro, que evoca algo antiguo y siniestro */
+    text-shadow: 0 0 20px rgba(136, 14, 79, 0.6); /* Resplandor más intenso */
+}
+
+header p {
+    font-size: 1.4em; /* Un poco más grande */
+    max-width: 900px;
+    margin: 0.8em auto 0;
+    color: #bdbdbd;
+}
+
+main {
+    max-width: 900px;
+    margin: 2.5em auto;
+    padding: 1.5em;
+    background-color: rgba(20, 20, 20, 0.98); /* Fondo del contenido principal, ligeramente más claro que el header */
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.8); /* Sombra intensa para profundidad */
+    border-radius: 8px;
+    border: 1px solid #333;
+}
+
+section {
+    margin-bottom: 2.5em;
+    padding: 2em;
+    border-bottom: 1px dashed #555; /* Borde punteado para un efecto "roto" o "deteriorado" */
+}
+
+section:last-of-type {
+    border-bottom: none;
+}
+
+h2 {
+    font-family: 'Nosifier', serif;
+    font-size: 3.2em; /* Un poco más grande */
+    color: #880e4f; /* Rojo púrpura oscuro */
+    margin-bottom: 1em;
+    text-shadow: 0 0 15px rgba(136, 14, 79, 0.4);
+}
+
+h3 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.9em; /* Un poco más grande */
+    color: #9e9e9e; /* Gris más claro para subtítulos */
+    margin-top: 2em;
+    margin-bottom: 1em;
+    border-bottom: 1px solid #616161;
+    padding-bottom: 0.5em;
+}
+
+ul {
+    list-style-type: none; /* Quitamos los bullets por defecto */
+    margin-left: 0;
+    padding-left: 0;
+    margin-bottom: 1.5em;
+    text-align: left; /* Alineamos el texto de las listas a la izquierda */
+}
+
+ul li {
+    position: relative;
+    padding-left: 30px; /* Espacio para el bullet custom */
+    margin-bottom: 1em;
+    font-size: 1.15em; /* Un poco más grande */
+    color: #c0c0c0;
+}
+
+ul li strong {
+    color: #e0e0e0; /* Nombres de personajes un poco más claros */
+}
+
+ul li::before {
+    content: "💀"; /* Bullet custom de calavera para el toque de terror */
+    color: #880e4f; /* Color púrpura oscuro */
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: 1.2em;
+    line-height: 1.5; /* Ajuste para que el icono se vea bien */
+}
+
+footer {
+    text-align: center;
+    padding: 2.5em; /* Un poco más de padding */
+    margin-top: 3em;
+    background-color: rgba(10, 10, 10, 0.95);
+    color: #757575; /* Gris más oscuro para el footer */
+    font-size: 0.95em;
+    border-top: 3px solid #4a148c; /* Borde místico también en el footer */
+}
+
+footer p:last-child {
+    margin-top: 0.8em;
+    font-style: italic;
+    color: #9e9e9e; /* Un poco más de color para la frase final */
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 3.8em;
+    }
+    header p {
+        font-size: 1.2em;
+    }
+    main {
+        margin: 1.5em;
+        padding: 1em;
+    }
+    h2 {
+        font-size: 2.8em;
+    }
+    h3 {
+        font-size: 1.6em;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 3em;
+    }
+    header p {
+        font-size: 1.1em;
+    }
+    h2 {
+        font-size: 2.2em;
+    }
+    h3 {
+        font-size: 1.4em;
+    }
+    ul li {
+        font-size: 1.05em;
+        padding-left: 25px;
+    }
+}
